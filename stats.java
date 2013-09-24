@@ -97,7 +97,7 @@ public static void main(String[] args) {
 		for (int i=0;i<ar.length;i++) {
 			temp+=(mean-ar[i])*(mean-ar[i]);
 		}
-		temp = temp/(ar.length-1);
+		temp = temp/(ar.length-1.0);
 		return Math.sqrt(temp);
 	}
 }
