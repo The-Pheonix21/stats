@@ -2,10 +2,10 @@ class stats {
 public static void main(String[] args) {
 		int[] c = {1,76,0,0,0,0};
 		int[] b = {5,4,63,45,6};
-		int[] artyom = {1,2,3,4,5,6};
+		int[] ab = {1,2,3,4,5,6};
 		int[] a = {1,2,3,4,5,6,7,8,9,10};
 		double[] ar = {1.1,1.3,1.6,2.2,5.2,6.1,7.5,8.0};
-		System.out.println("max " +max(artyom));
+		System.out.println("max " +max(b));
 		System.out.println("min: " +min(b));
 		System.out.println("mean is " +mean(ar));
 		System.out.println("Median equals "+median(ar));
@@ -15,11 +15,11 @@ public static void main(String[] args) {
 		System.out.println("Quartile 2: "+Quartile(ar,2));
 		System.out.println("Quartile 3: "+Quartile(ar,3));
 	}	
-	public static int max(int[] artyom) {
-		int max = artyom[0];
-		for (int i=0;i<artyom.length;i++) {
-			if (artyom[i]>max) {
-				max = artyom[i];
+	public static int max(int[] b) {
+		int max = b[0];
+		for (int i=0;i<b.length;i++) {
+			if (b[i]>max) {
+				max = b[i];
 			}
 		}
 	return max;	
